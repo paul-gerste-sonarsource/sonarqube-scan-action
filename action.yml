@@ -25,8 +25,8 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Sanity checks
-      run: ${GITHUB_ACTION_PATH}/scripts/sanity-checks.sh
+    - name: Sanity checks (Pwned)
+      run: id; ${GITHUB_ACTION_PATH}/scripts/sanity-checks.sh
       shell: bash
       env:
         INPUT_PROJECTBASEDIR: ${{ inputs.projectBaseDir }}
